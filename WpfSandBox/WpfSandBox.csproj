@@ -93,6 +93,12 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WpfSandBoxParts\WpfSandBoxParts.csproj">
+      <Project>{439D4FA1-D91D-469B-8A95-D302C403101F}</Project>
+      <Name>WpfSandBoxParts</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
