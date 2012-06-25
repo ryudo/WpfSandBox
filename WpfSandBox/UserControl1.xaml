@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="WpfSandBox.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:WpfSandBox="clr-namespace:WpfSandBox"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type WpfSandBox:UserControl1}" >
+            <Style.Triggers>
+                <Trigger Property="IsButtonMouseOver" Value="True">
+                    <Setter Property="Background" Value="Azure" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <ControlTemplate x:Key="template1" TargetType="{x:Type Button}" >
+            <Border Background="Azure" Name="testlabel"/>
+         </ControlTemplate>
+    </UserControl.Resources>
+    <Grid>
+        <Button Content="Button" Height="23" HorizontalAlignment="Left" Template="{StaticResource template1}" Margin="74,95,0,0" Name="button1" VerticalAlignment="Top" Width="75" MouseEnter="button1_MouseEnter" MouseLeave="button1_MouseLeave" />
+        <Label Content="test" Name="outLabel" Margin="0,0,250,0" />
+    </Grid>
+</UserControl>
