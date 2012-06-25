@@ -8,6 +8,6 @@
 				<SolidColorBrush Color="{DynamicResource res1}" />
 			</Button.Foreground>
 		</Button>
-        <my:UserControl1 HorizontalAlignment="Left" Margin="256,86,0,0" x:Name="userControl11" VerticalAlignment="Top" />
+        <my:ChangeStyleOtherControl HorizontalAlignment="Left" Margin="256,86,0,0" x:Name="userControl11" VerticalAlignment="Top" />
     </Grid>
 </Window>
