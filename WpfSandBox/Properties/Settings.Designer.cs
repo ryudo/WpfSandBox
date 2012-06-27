@@ -34,5 +34,17 @@ namespace WpfSandBox.Properties {
                 this["TextColor"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#FF00FF00")]
+        public global::System.Windows.Media.Color FillColor {
+            get {
+                return ((global::System.Windows.Media.Color)(this["FillColor"]));
+            }
+            set {
+                this["FillColor"] = value;
+            }
+        }
     }
 }

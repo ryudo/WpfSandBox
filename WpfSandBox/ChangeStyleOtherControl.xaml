@@ -9,12 +9,13 @@
         <Style TargetType="{x:Type WpfSandBox:ChangeStyleOtherControl}" >
             <Style.Triggers>
                 <Trigger Property="IsButtonMouseOver" Value="True">
-                    <Setter Property="Background" Value="Azure" />
+                    <Setter Property="Background" Value="{DynamicResource FillBrush}" />
                 </Trigger>
             </Style.Triggers>
         </Style>
         <ControlTemplate x:Key="template1" TargetType="{x:Type Button}" >
-            <Border Background="Azure" Name="testlabel"/>
+            <Border Background="{DynamicResource TextBrush}" Name="testlabel">
+            </Border>
          </ControlTemplate>
     </UserControl.Resources>
     <Grid>
