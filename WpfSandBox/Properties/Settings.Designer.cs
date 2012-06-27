@@ -26,12 +26,12 @@ namespace WpfSandBox.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("#FFFF0000")]
-        public global::System.Windows.Media.Color OffText {
+        public global::System.Windows.Media.Color TextColor {
             get {
-                return ((global::System.Windows.Media.Color)(this["OffText"]));
+                return ((global::System.Windows.Media.Color)(this["TextColor"]));
             }
             set {
-                this["OffText"] = value;
+                this["TextColor"] = value;
             }
         }
     }

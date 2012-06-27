@@ -22,7 +22,7 @@ namespace WpfSandBox
 		public MainWindow()
 		{
 			InitializeComponent();
-			Resources["res1"] = Properties.Settings.Default.OffText;
+			Resources["res1"] = Properties.Settings.Default.TextColor;
 		}
 	}
 }
