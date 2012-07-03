@@ -1,13 +1,34 @@
-﻿<Window x:Class="WpfSandBox.MainWindow"
+﻿<Window
 		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		Title="MainWindow" Height="350" Width="525" xmlns:my="clr-namespace:WpfSandBox">
+		xmlns:my="clr-namespace:WpfSandBox" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="WpfSandBox.MainWindow"
+		Title="MainWindow" Height="523" Width="790">
+	<Window.Resources>
+		<DataTemplate x:Key="listTemplate">
+			<Border BorderBrush="Red" BorderThickness="3" />
+		</DataTemplate>
+		<ControlTemplate x:Key="defaultItemStyle" TargetType="{x:Type ListBoxItem}" >
+			<Border BorderBrush="Blue" BorderThickness="3" />
+		</ControlTemplate>
+	</Window.Resources>
+	
 	<Grid>
-		<Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="121,104,0,0" Name="button1" VerticalAlignment="Top" Width="75" >
+		<Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="121,104,0,0" x:Name="button1" VerticalAlignment="Top" Width="75" >
 			<Button.Foreground>
 				<SolidColorBrush Color="{DynamicResource res1}" />
 			</Button.Foreground>
 		</Button>
-        <my:ChangeStyleOtherControl HorizontalAlignment="Left" Margin="256,86,0,0" x:Name="userControl11" VerticalAlignment="Top" />
-    </Grid>
+		<my:ChangeStyleOtherControl HorizontalAlignment="Left" Margin="256,86,0,0" x:Name="userControl11" VerticalAlignment="Top" />
+		<ListBox Height="100" HorizontalAlignment="Right" Margin="0,4,3,0" x:Name="listBox1" VerticalAlignment="Top" Width="120" d:LayoutOverrides="VerticalAlignment" >
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Border Background="Red" />
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+			<ListBoxItem Content="tes" Template="{StaticResource defaultItemStyle}" />
+			<ListBoxItem Content="testest" />
+		</ListBox>
+		<my:ExpansionUserControl Margin="30,16,0,-15" HorizontalAlignment="Left" Width="196.914"/>
+		<TextBlock Height="195" HorizontalAlignment="Left" Margin="329,256,0,0" Name="textBlock1" Text="    0.0034 以上で 160000 以下である Double 値の文字列表現。 非修飾値は、デバイスに依存しないピクセル単位で計測されます。 文字列には、小数点を明示的に含める必要はありません。 " VerticalAlignment="Top" Width="391" TextWrapping="Wrap" LineHeight="19" />
+	</Grid>
 </Window>
