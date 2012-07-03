@@ -13,6 +13,7 @@
 	</Window.Resources>
 	
 	<Grid>
-		<my:OuterPathControl Margin="60,28,266,113"/>
-	</Grid>
+		<my:OuterPathControl Margin="466,267,20,12"/>
+        <my:Expand Margin="82,41,0,163" x:Name="expand1" HorizontalAlignment="Left" Width="378" />
+    </Grid>
 </Window>

@@ -60,6 +60,10 @@
     <Compile Include="ChangeStyleOtherControl.xaml.cs">
       <DependentUpon>ChangeStyleOtherControl.xaml</DependentUpon>
     </Compile>
+    <Page Include="Expand.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ExpansionUserControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,6 +75,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Expand.xaml.cs">
+      <DependentUpon>Expand.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExpansionUserControl.xaml.cs">
       <DependentUpon>ExpansionUserControl.xaml</DependentUpon>
