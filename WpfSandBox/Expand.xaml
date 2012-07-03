@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="WpfSandBox.Expand"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Name="outerGrid">
+        <Line X1="20" Y1="20" X2="20" Y2="200" Stroke="Red" Name="innerLine1" />
+    	<Path Data="M30.5,8 L275.5,8" Fill="#FFF4F4F5" Height="1" Margin="30.5,8,23.5,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top"/>
+    	<Path Data="M8,20 L8,276" Fill="#FFF4F4F5" HorizontalAlignment="Left" Margin="8,20,0,23" Stretch="Fill" Stroke="Black" Width="1"/>
+    	<Path Data="M19.5,282 L17.5,20" Fill="#FFF4F4F5" HorizontalAlignment="Left" Margin="17.5,20,0,17" Stretch="Fill" Stroke="Black" Width="3"/>
+    	<Path x:Name="innerPath1" Data="M44.5,283 L270.5,283" Fill="#FFF4F4F5" Height="1" Margin="44.5,0,28.5,16" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom"/>
+    	<Path Data="M44.5,292 L271.5,288" Fill="#FFF4F4F5" Height="5" Margin="44.5,0,27.5,7" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom"/>
+    	<Path Data="M292,14 L292,268" Fill="#FFF4F4F5" HorizontalAlignment="Right" Margin="0,14,7,31" Stretch="Fill" Stroke="Black" Width="1"/>
+    	<Path Data="M283.5,14 L283.5,277" Fill="#FFF4F4F5" HorizontalAlignment="Right" Margin="0,14,15.5,22" Stretch="Fill" Stroke="Black" Width="1"/>
+    	<Path Data="M30.5,14 L271.5,13" Fill="#FFF4F4F5" Height="2" Margin="30.5,13,27.5,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top"/>
+    	<Path Data="M293,264 L264.5,292" Fill="#FFF4F4F5" HorizontalAlignment="Right" Height="29" Margin="0,0,6,7" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="29.5"/>
+    	<Path Data="M292,278 L272.5,293" Fill="#FFF4F4F5" HorizontalAlignment="Right" Height="16" Margin="0,0,7,6" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="20.5"/>
+    	<Path Data="M13.5,264 L40.5,292" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="29" Margin="13.5,0,0,7" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="28"/>
+    	<Path Data="M9.5,269 L28.5,294" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="9.5,0,0,5" Stretch="Fill" Stroke="Black" VerticalAlignment="Bottom" Width="20"/>
+        
+    </Grid>
+</UserControl>
