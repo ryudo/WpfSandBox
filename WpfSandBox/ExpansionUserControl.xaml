@@ -1,0 +1,32 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="WpfSandBox.ExpansionUserControl"
+	x:Name="UserControl"
+	d:DesignWidth="640" d:DesignHeight="480">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="30"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="30"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="30"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="30"/>
+		</Grid.ColumnDefinitions>
+		<Rectangle Grid.Column="1" Fill="#FFBABAFF" Margin="6.952,0,4.28,0" Grid.Row="2" Stroke="#FF586AFF" StrokeThickness="2" VerticalAlignment="Center" Height="18"/>
+		<Path Grid.Column="2" Data="M614.66667,447.33333 L602.33286,459.66714 602.33286,471.33329 626.83234,446.83348 z" Fill="#FFBABAFF" Margin="1.053,-0.087,12.167,7.667" Grid.Row="2" Stretch="Fill" Stroke="#FF586AFF" StrokeThickness="2"/>
+		<Rectangle Grid.Column="2" Fill="#FFBABAFF" Margin="0,1.787,0,1.92" Grid.Row="1" Stroke="#FF586AFF" StrokeThickness="2" Width="13" HorizontalAlignment="Center"/>
+		<Rectangle Grid.Column="1" Fill="#FFBABAFF" Margin="1.285,0,2.947,0" Stroke="#FF586AFF" StrokeThickness="2" VerticalAlignment="Center" Height="12"/>
+		<Rectangle Fill="#FFBABAFF" Margin="0" Grid.Row="1" Stroke="#FF586AFF" StrokeThickness="2" HorizontalAlignment="Center" Width="15"/>
+		<Path Data="M42.666667,465.33333 L10.666287,440.66701 35.332877,439.33334 45.999655,453.33368 z" Fill="#FFBABAFF" Margin="9.667,-7.587,1.048,13.667" Grid.Row="2" Stretch="Fill" Stroke="#FF586AFF" StrokeThickness="2"/>
+		<Path Data="M42,14 L11.999952,34 30.666619,32.666667 45.333285,23.333333 z" Fill="#FFBABAFF" Margin="11,13,1.715,3.88" Stretch="Fill" Stroke="#FF586AFF" StrokeThickness="2"/>
+		<Path Grid.Column="2" Data="M604.66667,15.333333 L603.99941,24.000333 615.3375,32.000334 622.67423,32.000334 z" Fill="#FFBABAFF" Margin="2.72,14.333,16.333,5.88" Stretch="Fill" Stroke="#FF586AFF" StrokeThickness="2"/>
+		<Label Content="Label" Grid.Column="1" Margin="0" Grid.Row="1" Foreground="Red" VerticalContentAlignment="Center"/>
+	</Grid>
+</UserControl>
