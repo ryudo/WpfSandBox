@@ -13,7 +13,6 @@
 	</Window.Resources>
 	
 	<Grid>
-		<my:OuterPathControl Margin="466,267,20,12"/>
-        <my:Expand Margin="82,41,0,163" x:Name="expand1" HorizontalAlignment="Left" Width="378" />
+        <my:EllipseControl HorizontalAlignment="Left" Margin="82,135,0,0" x:Name="ellipseControl1" VerticalAlignment="Top" Height="135" Width="437" />
     </Grid>
 </Window>

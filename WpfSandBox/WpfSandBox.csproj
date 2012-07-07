@@ -60,6 +60,10 @@
     <Compile Include="ChangeStyleOtherControl.xaml.cs">
       <DependentUpon>ChangeStyleOtherControl.xaml</DependentUpon>
     </Compile>
+    <Page Include="EllipseControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Expand.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -75,6 +79,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CornarRadiusConverter.cs" />
+    <Compile Include="EllipseControl.xaml.cs">
+      <DependentUpon>EllipseControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Expand.xaml.cs">
       <DependentUpon>Expand.xaml</DependentUpon>

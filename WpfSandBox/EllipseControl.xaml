@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="WpfSandBox.EllipseControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="238" d:DesignWidth="394">
+    <Grid Name="outerGrid">
+        <Rectangle RadiusX="{Binding ElementName=outerGrid,Path=ActualHeight}" RadiusY="{Binding ElementName=outerGrid,Path=ActualHeight}" Stroke="Black" StrokeThickness="3" />
+    </Grid>
+</UserControl>
