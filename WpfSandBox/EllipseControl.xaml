@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="WpfSandBox.EllipseControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfSandBox" 
+             x:Name="control"
+             mc:Ignorable="d" d:DesignHeight="239" d:DesignWidth="292">
+    <UserControl.Resources>
+        <local:CornarRadiusConverter x:Key="conv1" />
+    </UserControl.Resources>
+    <Grid Name="outerGrid">
+        <Rectangle RadiusX="{Binding ElementName=outerGrid,Path=ActualHeight,Converter={StaticResource conv1}}" RadiusY="{Binding ElementName=outerGrid,Path=ActualHeight,Converter={StaticResource conv1}}" Stroke="Black" StrokeThickness="3" >
+            <Rectangle.Fill>
+                <RadialGradientBrush RadiusX="0.5" RadiusY="{Binding Aspect,ElementName=control}">
+                    <GradientStop  Color="Black" Offset="1" />
+                    <GradientStop  Color="Bisque" />
+                </RadialGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="{Binding Aspect,ElementName=control}" />
+    </Grid>
+</UserControl>
