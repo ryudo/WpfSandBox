@@ -152,10 +152,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\arrowdown.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\arrowdown_on.png" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
