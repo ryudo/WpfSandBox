@@ -15,5 +15,6 @@
 	<Grid>
         <my:EllipseControl HorizontalAlignment="Left" Margin="82,135,0,0" x:Name="ellipseControl1" VerticalAlignment="Top" Height="97" Width="543" />
 		<Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="196,291,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+		<my:IconAttachButton Content="Button" Height="23" HorizontalAlignment="Left" Margin="391,286,0,0" x:Name="iconAttachButton1" VerticalAlignment="Top" Width="75" OffIcon="/WpfSandBox;component/Images/arrowdown.png" OnIcon="/WpfSandBox;component/Images/arrowdown_on.png" />
 	</Grid>
 </Window>
