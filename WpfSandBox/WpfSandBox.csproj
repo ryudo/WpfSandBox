@@ -75,6 +75,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="GradientControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -92,6 +96,9 @@
     </Compile>
     <Compile Include="ExpansionUserControl.xaml.cs">
       <DependentUpon>ExpansionUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GradientControl.xaml.cs">
+      <DependentUpon>GradientControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="IconAttach.cs" />
     <Compile Include="IconAttachButton.cs" />
